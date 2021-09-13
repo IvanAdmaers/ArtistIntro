@@ -1,0 +1,28 @@
+@use 'styles/variables';
+
+@import 'styles/functions/darker.scss';
+
+.preview {
+  width: 100%;
+  min-height: 100vh;
+  background-color: darker(variables.$dark, 1);
+  padding: variables.$offset 0;
+}
+
+.title {
+  display: block;
+  text-align: center;
+  font-weight: 700;
+  font-size: variables.$h1;
+  margin-bottom: variables.$offset;
+}
+
+.image {
+  text-align: center;
+}
+
+.image img {
+  display: block;
+  max-width: 100%;
+  border-radius: 50%;
+}

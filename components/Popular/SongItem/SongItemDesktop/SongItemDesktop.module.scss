@@ -1,0 +1,118 @@
+.inner {
+  position: relative;
+  height: 56px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  display: grid;
+  grid-template-columns: [index] 16px [first] 4fr [var1] 2fr [last] minmax(120px,1fr);
+  grid-gap: 16px;
+  padding: 0 16px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+}
+
+// index
+.indexInner {
+  display: inline-block;
+  color: #b3b3b3;
+  width: 16px;
+  height: 16px;
+  min-height: 16px;
+  min-width: 16px;
+  position: relative;
+}
+
+.indexInnerSpan {
+  position: absolute;
+  top: -4px;
+  font-variant: tabular-nums;
+  right: .25em;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 24px;
+  text-transform: none;
+}
+
+// body
+
+.body {
+  justify-self: start;
+}
+
+.bodyImage {
+  display: inline-block;
+  margin-right: 16px;
+  flex-shrink: 0;
+}
+
+.bodyTitle {
+  column-gap: 8px;
+    display: grid;
+    grid-template:
+        "title title"
+        "badges subtitle"/auto 1fr;
+  padding-right: 8px;
+}
+
+.bodyTitleText {
+  color: #fff;
+  grid-area: title;
+  justify-self: start;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  word-break: break-all;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: unset;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 24px;
+  text-transform: none;
+}
+
+// audition
+
+.audition {
+  justify-self: start;
+}
+
+.auditionText {
+  color: #b3b3b3;
+  font-feature-settings: "ss05" on;
+  text-align: right;
+  width: 11ch;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 16px;
+  text-transform: none;
+}
+
+// duration
+
+.duration {
+  grid-column: last;
+  justify-self: end;
+}
+
+.durationText {
+  color: rgb(179, 179, 179);
+  margin-right: 16px;
+  -webkit-box-pack: end;
+  display: flex;
+  font-variant-numeric: tabular-nums;
+  justify-content: flex-end;
+  width: 4ch;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 16px;
+  text-transform: none;
+}
+

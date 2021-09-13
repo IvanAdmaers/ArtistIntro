@@ -1,0 +1,106 @@
+.item {
+  display: flex;
+  flex-direction: row;
+  margin: 2px 0px;
+}
+
+.content {
+  border: none;
+  touch-action: manipulation;
+  align-items: center;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  color: rgb(255, 255, 255);
+  flex-grow: 0;
+  height: 72px;
+  position: relative;
+  width: 100%;
+  padding: 8px 16px;
+  max-width: calc(100% - 56px);
+  transition: background-color 0.1s cubic-bezier(0.3, 0, 0, 1) 0s, opacity 0.1s cubic-bezier(0.3, 0, 0, 1) 0s, padding 0.1s cubic-bezier(0.3, 0, 0, 1) 0s;
+}
+
+.index {
+  color: rgb(179, 179, 179);
+  min-width: 40px;
+  margin-right: 16px;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.contentTrack {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  text-align: left;
+  flex-direction: row;
+}
+
+.contentTrackInner {
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: left;
+}
+
+.trackTitle {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: left;
+}
+
+.trackTitleInner {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.trackTitleLink {
+  color: inherit;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+
+.audition {
+  color: rgb(179, 179, 179);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+}
+
+.audition * {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// menu
+
+.menu {
+  display: flex;
+  flex-direction: row;
+}
+
+.menuButton {
+  display: flex;
+  width: 46px;
+  padding: 20px 12px;
+  overflow: hidden;
+  color: #fff;
+  background: transparent;
+  border: none;
+  transition: background-color 0.2s ease 0s;
+  touch-action: manipulation;
+}
+
+.menuIcon {
+  color: rgb(255, 255, 255);
+}

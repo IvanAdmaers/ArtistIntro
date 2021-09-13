@@ -1,0 +1,18 @@
+@use 'styles/variables';
+
+@import 'styles/functions/darker.scss';
+
+.popular {
+  width: 100%;
+  min-height: 100vh;
+  background-color: darker(variables.$dark, 0.6);
+  padding: variables.$offset 0;
+}
+
+.title {
+  display: block;
+  text-align: center;
+  font-weight: 700;
+  font-size: variables.$h1;
+  margin-bottom: variables.$offset;
+}
