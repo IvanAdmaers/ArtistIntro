@@ -24,6 +24,6 @@ Or
 npm start
 ```
 
-to production.
+for production.
 
 5. That's it!
