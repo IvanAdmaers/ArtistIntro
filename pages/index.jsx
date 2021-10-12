@@ -5,7 +5,7 @@ import Preview from 'components/Preview';
 import Popular from 'components/Popular';
 import Footer from 'components/Footer';
 
-import { getArtist } from 'api';
+import getArtistData from 'lib/getArtistData';
 
 const Home = ({ name, image, songs, year }) => (
   <>
@@ -30,9 +30,9 @@ Home.propTypes = {
 
 export const getStaticProps = async () => {
   try {
-    const artist = await getArtist();
+    const { data } = await getArtistData();
 
-    const { name, image, songs } = artist;
+    const { name, image, songs } = data;
 
     const year = new Date().getFullYear();
 
