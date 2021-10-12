@@ -11,7 +11,10 @@ const Home = ({ name, image, songs, year }) => (
   <>
     <Head>
       <title>{name}</title>
-      <meta name="description" content={`See the best ${name} songs. Get more about the artist. Artist ${name}`} />
+      <meta
+        name="description"
+        content={`See the best ${name} songs. Get more about the artist. Artist ${name}`}
+      />
     </Head>
     <Preview artist={name} image={image} />
     <Popular artist={name} songs={songs} />
